@@ -1,7 +1,7 @@
 {
   "name": "react_testing_project",
   "version": "1.0.0",
-  "description": "React_testing_project\r =====================\r testing project on React.js",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,12 +18,9 @@
     "webpack": "^1.12.*",
     "webpack-dev-server": "^1.10.*"
   },
-
   "dependencies": {
     "react": "^0.13.*"
   },
-  
-
   "bugs": {
     "url": "https://github.com/rNiall/react_testing_project/issues"
   },
