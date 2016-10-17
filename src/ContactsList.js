@@ -44,9 +44,9 @@ class ContactsList extends React.Component {
 						<button type="submit"> Add New Contact</button>
 					</form>	
 				<ul>
-						{filteredContacts.map((contact)=> {
-							return <Contact contact={contact} key={contact.id}/>
-						})}
+					{filteredContacts.map((contact)=> {
+						return <Contact contact={contact} key={contact.id}/>
+					})}
 				</ul>
 
 			</div>
