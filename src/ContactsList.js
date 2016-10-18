@@ -33,21 +33,31 @@ class ContactsList extends React.Component {
 			}
 		);
 		return (
-			<div>
-				<input type="text" 
-				placeholder="Search"
-					value={this.state.search} 
-					onChange={this.updateSearch.bind(this)} />
+			<div className='form-group row'>
+				<div className='col-md-12'>
+					<input type="text" 
+					placeholder="Поиск"
+						value={this.state.search} 
+						onChange={this.updateSearch.bind(this)} />
+				</div>
 					<form onSubmit={this.addContact.bind(this)}>
-						<input type="text" ref="name" />
-						<input type="text" ref="phone" />
-						<button type="submit"> Add New Contact</button>
+						<div className='col-md-5'>
+							<input placeholder="Имя" type="text" ref="name" />
+						</div>
+						<div className='col-md-5'>
+							<input placeholder="Телефон" type="text" ref="phone" />
+						</div>
+						<div className='col-md-2 col-xs-6'>
+							<button className='btn btn-default' type="submit">+</button>
+						</div>
 					</form>	
-				<ul>
-					{filteredContacts.map((contact)=> {
-						return <Contact contact={contact} key={contact.id}/>
-					})}
-				</ul>
+				<div className='col-md-12'>
+					<ul>
+						{filteredContacts.map((contact)=> {
+							return <Contact contact={contact} key={contact.id}/>
+						})}
+					</ul>
+				</div>
 
 			</div>
 		)
