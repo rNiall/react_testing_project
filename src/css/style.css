@@ -2240,7 +2240,6 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
@@ -2612,7 +2611,6 @@ select[multiple].input-lg {
   .form-inline .form-control {
     display: inline-block;
     width: auto;
-    vertical-align: middle;
   }
   .form-inline .form-control-static {
     display: inline-block;
@@ -3151,41 +3149,71 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
 }
+body {
+  background: #f7f7f7;
+}
+#app {
+  margin-top: 5em;
+}
+#app h1 {
+  margin: 0 0 1em 0;
+  text-align: center;
+  color: #636363;
+}
 input[type=text] {
   text-align: center;
   font: inherit;
   border: 6px solid #a3d8d6;
-  padding: 13px 12px;
+  padding: 8px 12px;
   font-size: 15px;
   box-shadow: 0 1px 1px #DDD;
-  width: 384px;
+  width: 100%;
   outline: none;
   display: block;
   color: #7B8585;
-  margin: 0 auto 20px;
+  margin: 0 auto 15px;
 }
 ul {
   list-style: none;
   display: inline-block;
-  width: 420px;
+  width: 100%;
   text-align: left;
+  padding-left: 0;
 }
 ul li {
   display: block;
   padding: 15px 20px;
-  background-color: #F8F8F8;
-  color: #7B8585;
+  background-color: #eaeaea;
+  color: #6a6b6b;
+  font-size: 16px;
   margin-bottom: 3px;
   position: relative;
   transition: 0.3s;
 }
-ul li a {
-  position: absolute;
-  left: 160px;
-  font-size: 12px;
-  line-height: 16px;
-  color: #969d9d;
-}
 ul li:hover {
   background-color: #d8f2f1;
+}
+ul li span {
+  padding: 0 0 0 15%;
+  position: absolute;
+  left: 45%;
+  font-size: 16px;
+  line-height: 16px;
+  color: #6a6b6b;
+  border-left: 1px solid #ccc;
+}
+form input[type=text] {
+  border: 2px solid #a3d8d6;
+  padding: 8px 12px;
+  font-size: 15px;
+  box-shadow: 0 1px 1px #DDD;
+}
+.btn-default {
+  margin: 0 auto 15px;
+  width: 100%;
+  padding: 8px 12px;
+  border: 2px solid #a3d8d6;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px #DDD;
+  background: #aeefec;
 }
